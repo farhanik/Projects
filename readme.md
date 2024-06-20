@@ -1,1 +1,1 @@
-# Random-Projects
+# Random-Static-Projects
