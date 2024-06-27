@@ -91,16 +91,21 @@ bool run_game()
 {
     int in;
     int count = 0;
+    int count1=0;
     bool con = TRUE;
     while (con)
     {
         settextcolor(10);
-        cout << setw(100) << "Ponits = " << count << "\n";
+        cout << setw(100) << "Computer Ponits = " << count1 << "\n";
+        cout<<"\n";
+        settextcolor(9);
+        cout << setw(100) << "User Ponits     = " << count << "\n";
         settextcolor(5);
+        cout<<"\n";
         cout << setw(71) << "1. Rock " << "\n";
         cout << setw(72) << "2. Paper " << "\n";
         cout << setw(75) << "3. Scissors " << "\n";
-
+        
         cout << "\n";
         settextcolor(3);
         cout << setw(75) << "Enter one option..: ";
@@ -125,6 +130,10 @@ bool run_game()
         {
             count++;
             won = true;
+        }
+        else
+        {
+            count1++;
         }
 
         cout << "\n";
